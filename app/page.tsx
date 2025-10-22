@@ -27,8 +27,8 @@ export default function Home() {
         {/* Logo with sophisticated reveal */}
         <div className={`transition-all duration-2000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <Image
-            src="/images/thirdprime-logo-full2.png"
-            alt="Third Prime Technologies"
+            src="/images/Tpio-final.PNG"
+            alt="Third Prime"
             width={800}
             height={300}
             priority
@@ -46,13 +46,17 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Minimal contact - just the email */}
+        {/* Minimal contact - clickable email without hyperlink styling */}
         <div className={`mt-16 transition-all duration-2000 delay-2000 ${showContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="text-center">
             <br />
-            <div className="text-lg font-light text-gray-300 tracking-wide">
+            <a 
+              href="mailto:info@thirdprime.io"
+              className="text-lg font-light text-gray-300 tracking-wide hover:text-white transition-colors duration-300 cursor-pointer"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
               info@thirdprime.io
-            </div>
+            </a>
           </div>
         </div>
 
